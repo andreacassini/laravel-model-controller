@@ -12,7 +12,7 @@ class PageController extends Controller
     public function index()
     {
         $comics = comics::all();
-        dd($comics);
+        //dd($comics);
         return view('home', compact('comics'));
     }
 }
